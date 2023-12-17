@@ -7,7 +7,7 @@ The page is fully responsive to all screens.
 
 ## Checkout The Live Demo
 
-[Link to Page](https://introducing-chatgpt-clone.netlify.app/){:target="_blank"}
+[Link to Page](https://introducing-chatgpt-clone.netlify.app/)
 
 ![Introducing ChatGPT Landing Page - Desktop](https://raw.githubusercontent.com/Peac-h/introducing_chatgpt_landing_page/main/Screenshot%202023-12-17%20at%205.52.46%20AM.png)
 
