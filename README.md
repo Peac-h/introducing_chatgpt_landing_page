@@ -1,6 +1,6 @@
 # Introducing ChatGPT Landing Page
 
-##Description
+## Description
 This project is a clone of [OpenAI's Introducing ChatGPT Landing Page](https://openai.com/blog/chatgpt). It has been developed using SCSS for styling, TypeScript for scripting, and follows the MVC (Model-View-Controller) architecture. The project is bundled using Webpack.
 
 The page is fully responsive to all screens.
@@ -13,7 +13,7 @@ The page is fully responsive to all screens.
 
 ![Introducing ChatGPT Landing Page - Desktop](https://raw.githubusercontent.com/Peac-h/introducing_chatgpt_landing_page/main/Screenshot%202023-12-17%20at%205.53.05%20AM.png)
 
-##Technologies Used
+## Technologies Used
 
 - SCSS: Styling language used for a more maintainable and structured stylesheet.
 - TypeScript: Programming language for adding static typing to JavaScript.
