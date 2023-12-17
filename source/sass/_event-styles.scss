@@ -1,0 +1,31 @@
+.header.white-bg {
+  background: var(--col-white);
+  color: var(--col-black);
+
+  .signup-link {
+    &:hover,
+    &:active {
+      background: var(--col-black);
+      color: var(--col-white);
+      text-decoration: none;
+    }
+  }
+
+  .nav-item__links {
+    background: var(--col-white) !important;
+  }
+}
+
+.nav-item[area-expanded="false"] {
+  .nav-button {
+    text-decoration: none !important;
+
+    svg {
+      rotate: 0deg !important;
+    }
+  }
+
+  .nav-item__links {
+    display: none !important;
+  }
+}

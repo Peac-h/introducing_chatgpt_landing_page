@@ -1,0 +1,24 @@
+.limitations {
+  margin-bottom: var(--spacing);
+
+  &__title {
+    margin-bottom: var(--gutter);
+  }
+
+  &__list {
+    list-style-type: disc;
+    line-height: 130%;
+  }
+
+  &__list-item {
+    margin-left: var(--distance);
+
+    &:not(:nth-of-type(5)) {
+      margin-bottom: 0.8rem;
+    }
+
+    .sup {
+      left: -0.4rem;
+    }
+  }
+}

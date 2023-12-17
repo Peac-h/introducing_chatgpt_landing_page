@@ -1,0 +1,23 @@
+.methods {
+  line-height: 130%;
+  margin-bottom: var(--spacing);
+
+  &__title {
+    margin-bottom: var(--gutter);
+  }
+
+  &__paragraph {
+    &:nth-of-type(1) {
+      margin-bottom: var(--distance);
+    }
+  }
+
+  &__image-container {
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

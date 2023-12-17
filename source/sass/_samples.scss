@@ -1,0 +1,22 @@
+.samples {
+  margin-bottom: var(--spacing);
+
+  &__title {
+    margin-bottom: var(--margin-big);
+  }
+
+  &__description {
+    line-height: 130%;
+    min-height: 4.7rem;
+
+    @media only screen and (min-width: $bp-min-1920) {
+      min-height: 5.5rem;
+    }
+    @media only screen and (max-width: $bp-max-1280) {
+      min-height: 4.2rem;
+    }
+    @media only screen and (max-width: $bp-max-743) {
+      min-height: 6.2rem;
+    }
+  }
+}

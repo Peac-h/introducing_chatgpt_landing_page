@@ -1,0 +1,157 @@
+:root {
+  // colors
+  --col-main-green: #193718;
+  --col-main-purple: #ff8bff;
+  --col-black: #000;
+  --col-white: #fff;
+
+  // spaces
+  --gutter: 2.4rem;
+  --spacing: 9.6rem;
+  --distance: 1.8rem;
+  --margin-big: 6rem;
+  --margin-small: 1.2rem;
+  --hero-top: 26rem;
+  --hero-bottom: 4.8rem;
+  --footer-bottom: 18rem;
+
+  // fonts
+  --font-basic: 1.8rem;
+  --font-middle: 2.8rem;
+  --font-h1: 7.3rem;
+  --font-foothead: 4.8rem;
+
+  // text-underlines
+  --offset: 0.2em;
+}
+
+// breakpoints
+$bp-min-1920: 120em;
+$bp-max-1280: 80em;
+$bp-max-743: 46.4375em;
+
+// adapting to breakpoints
+@media only screen and (min-width: $bp-min-1920) {
+  :root {
+    // spaces
+    --spacing: 11.2rem;
+    --distance: 2.1rem;
+    --margin-big: 7.1rem;
+    --hero-top: 28rem;
+    --footer-bottom: 19.7rem;
+
+    // fonts
+    --font-basic: 2.1rem;
+    --font-middle: 3.2rem;
+    --font-h1: 8.4rem;
+    --font-foothead: 5.5rem;
+
+    // text-underlines
+    --offset: 0.2em;
+  }
+}
+
+@media only screen and (max-width: $bp-max-1280) {
+  :root {
+    // spaces
+    --gutter: 1.6rem;
+    --spacing: 8.4rem;
+    --distance: 1.6rem;
+    --margin-big: 4.8rem;
+    --margin-small: 0.8rem;
+    --hero-top: 24rem;
+    --hero-bottom: 3.2rem;
+    --footer-bottom: 16rem;
+
+    // fonts
+    --font-basic: 1.6rem;
+    --font-middle: 2.4rem;
+    --font-h1: 5.5rem;
+    --font-foothead: 3.6rem;
+
+    // text-underlines
+    --offset: 0.2em;
+  }
+}
+
+@media only screen and (max-width: $bp-max-743) {
+  :root {
+    // spaces
+    --spacing: 7.2rem;
+    --margin-big: 3.6rem;
+    --hero-top: 20.8rem;
+    --footer-bottom: 14.4rem;
+
+    // fonts
+    --font-middle: 2.1rem;
+    --font-h1: 4.2rem;
+    --font-foothead: 2.8rem;
+  }
+}
+
+// Basic Stylings
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Soehne;
+  font-size: var(--font-basic);
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+
+  // Total Resets
+  #link0,
+  #link1,
+  #link2,
+  #link3,
+  #sup1,
+  #sup2,
+  #sup3 {
+    scroll-margin-top: 8rem;
+  }
+
+  a:link,
+  a:visited {
+    color: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  svg {
+    height: 1em;
+    width: 1em;
+  }
+}

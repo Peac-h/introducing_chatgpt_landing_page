@@ -1,0 +1,140 @@
+// LAYOUT MIXINS
+@mixin layout {
+  display: grid;
+  padding-right: var(--gutter);
+
+  & > * {
+    padding-left: var(--gutter);
+  }
+
+  @media only screen and (min-width: $bp-min-1920) {
+    max-width: 1848px;
+    padding-right: 0;
+  }
+}
+
+@mixin layout-2-6-4 {
+  @include layout;
+  grid-template-columns: 2fr 6fr 4fr;
+
+  @media only screen and (max-width: $bp-max-1280) {
+    grid-template-columns: 9fr 3fr;
+  }
+  @media only screen and (max-width: $bp-max-743) {
+    grid-template-columns: 12fr;
+  }
+}
+
+@mixin layout-2-5-5 {
+  @include layout;
+  grid-template-columns: 2fr 5fr 5fr;
+
+  @media only screen and (max-width: $bp-max-1280) {
+    grid-template-columns: 3fr 9fr;
+  }
+  @media only screen and (max-width: $bp-max-743) {
+    grid-template-columns: 12fr;
+  }
+}
+
+@mixin layout-2-10 {
+  @include layout;
+  grid-template-columns: 2fr 10fr;
+
+  @media only screen and (max-width: $bp-max-1280) {
+    grid-template-columns: 3fr 9fr;
+  }
+  @media only screen and (max-width: $bp-max-743) {
+    grid-template-columns: 12fr;
+  }
+}
+
+@mixin layout-6-6 {
+  @include layout;
+  grid-template-columns: 6fr 6fr;
+}
+
+@mixin layout-12 {
+  @include layout;
+  grid-template-columns: 12fr;
+}
+
+@mixin layout-footer {
+  @include layout;
+  grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+
+  @media only screen and (max-width: $bp-max-1280) {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+  }
+  @media only screen and (max-width: $bp-max-743) {
+    grid-template-columns: 6fr 6fr;
+  }
+}
+
+// PAGE LAYOUTS
+.header .content,
+.main .preview__content,
+.main .sample-block .content {
+  @include layout-2-6-4;
+}
+
+.hero .content {
+  @include layout-6-6;
+}
+
+.main .samples__header,
+.main .methods,
+.main .limitations,
+.main .it-deployment__header,
+.main .it-deployment__content,
+.main .sample-buttons {
+  @include layout-2-6-4;
+
+  & > * {
+    grid-column: 2;
+
+    @media only screen and (max-width: $bp-max-1280) {
+      grid-column: 1;
+    }
+  }
+}
+
+.main .preview__header {
+  @include layout-2-5-5;
+
+  @media only screen and (max-width: $bp-max-1280) {
+    grid-template-columns: 2fr 3fr 3fr;
+  }
+  @media only screen and (max-width: $bp-max-743) {
+    grid-template-columns: 12fr;
+  }
+}
+
+.footer .acknowledgments,
+.footer .footnotes {
+  @include layout-2-5-5;
+}
+
+.footer .references,
+.footer .authors {
+  @include layout-2-10;
+}
+
+.footer .references__list {
+  @include layout-6-6;
+  grid-template-rows: min-content 12fr;
+
+  @media only screen and (max-width: $bp-max-1280) {
+    grid-template-columns: 12fr;
+  }
+}
+
+.search .search__content,
+.footer .related-research .content,
+.footer .connectivity-hub {
+  @include layout-12;
+}
+
+.footer .navigation-links {
+  @include layout-footer;
+}

@@ -1,0 +1,38 @@
+.main__content {
+  background: var(--col-white);
+  color: var(--col-black);
+  padding: var(--spacing) 0;
+  padding-top: 9.6rem;
+
+  & *::selection {
+    color: var(--col-white);
+    background: var(--col-black);
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: var(--font-middle);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+
+    @media only screen and (max-width: $bp-max-743) {
+      letter-spacing: normal;
+      line-height: 130%;
+    }
+  }
+
+  // Total Resets
+  a {
+    &:link,
+    &:visited {
+      text-decoration-line: underline;
+      text-underline-offset: var(--offset);
+      text-decoration-thickness: 1px;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.it-deployment {
+  &__title {
+    margin-bottom: var(--gutter);
+  }
+
+  &__paragraph {
+    line-height: 130%;
+
+    &:nth-of-type(1) {
+      margin-bottom: var(--spacing);
+    }
+  }
+
+  &__content {
+    row-gap: var(--distance);
+    margin-top: calc(var(--spacing) - var(--gutter));
+    position: relative;
+
+    &-aside {
+      position: absolute;
+      bottom: 5.5rem;
+      right: var(--gutter);
+      width: 30%;
+
+      font-size: 1.4rem;
+      line-height: 130%;
+      display: flex;
+      gap: 3rem;
+
+      @media only screen and (max-width: $bp-max-1280) {
+        font-size: 1.2rem;
+        width: 25%;
+        bottom: 3.5rem;
+        gap: 1.8rem;
+      }
+      @media only screen and (max-width: $bp-max-743) {
+        display: none;
+      }
+    }
+  }
+}
