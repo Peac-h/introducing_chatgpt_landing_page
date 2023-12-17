@@ -13,12 +13,6 @@ The page is fully responsive to all screens.
 
 ![Introducing ChatGPT Landing Page - Desktop](https://raw.githubusercontent.com/Peac-h/introducing_chatgpt_landing_page/main/Screenshot%202023-12-17%20at%205.53.05%20AM.png)
 
-![Introducing ChatGPT Landing Page - Small Screen](https://raw.githubusercontent.com/Peac-h/introducing_chatgpt_landing_page/main/Screenshot%202023-12-17%20at%205.53.34%20AM.png)
-
-![Introducing ChatGPT Landing Page - Small Screen](https://raw.githubusercontent.com/Peac-h/introducing_chatgpt_landing_page/main/Screenshot%202023-12-17%20at%205.53.59%20AM.png)
-
-![Introducing ChatGPT Landing Page - Small Screen](https://raw.githubusercontent.com/Peac-h/introducing_chatgpt_landing_page/main/Screenshot%202023-12-17%20at%205.54.28%20AM.png)
-
 ##Technologies Used
 
 - SCSS: Styling language used for a more maintainable and structured stylesheet.
