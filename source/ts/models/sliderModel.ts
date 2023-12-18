@@ -10,7 +10,7 @@ export interface SliderConfig {
 
 export class SliderModel {
   static initializeSlider(config: SliderConfig): void {
-    let currentIndex: number;
+    let currentIndex: number = 0;
 
     document.addEventListener("DOMContentLoaded", () => {
       let currentIndex = 0;
@@ -58,8 +58,6 @@ export class SliderModel {
     );
 
     config.sampleContainer.style.height = `${config.samples[currentIndex].offsetHeight}px`;
-    console.log(config.samples[0].offsetHeight);
-    console.log(config.samples[currentIndex].offsetHeight);
 
     if (config.description) {
       switch (currentIndex) {
