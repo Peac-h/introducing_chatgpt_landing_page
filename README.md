@@ -1,6 +1,7 @@
 # Introducing ChatGPT Landing Page
 
 ## Description
+
 This project is a clone of [OpenAI's Introducing ChatGPT Landing Page](https://openai.com/blog/chatgpt). It has been developed using SCSS for styling, TypeScript for scripting, and follows the MVC (Model-View-Controller) architecture. The project is bundled using Webpack.
 
 The page is fully responsive to all screens.
